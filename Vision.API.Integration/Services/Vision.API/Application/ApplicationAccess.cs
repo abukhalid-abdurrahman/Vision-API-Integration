@@ -24,14 +24,14 @@ namespace Vision.API.Integration.Pro.Services.Vision.API.Application
 
         public async Task<ImageAnnotatorClient> CreateApp()
         {
-            try
-            {
-                return await ImageAnnotatorClient.CreateAsync();
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+             try
+             {
+                 return await ImageAnnotatorClient.CreateAsync();
+             }
+             catch (Exception)
+             {
+                 return null;
+             }
         }
 
         public async Task ShutdownApp()

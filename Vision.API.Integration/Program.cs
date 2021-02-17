@@ -1,4 +1,5 @@
 ﻿using System;
+using Vision.API.Integration.Pro.Services.Vision.API.Application;
 
 namespace Vision.API.Integration.Pro
 {
@@ -6,7 +7,7 @@ namespace Vision.API.Integration.Pro
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }

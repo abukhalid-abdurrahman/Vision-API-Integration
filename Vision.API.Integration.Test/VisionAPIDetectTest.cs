@@ -14,8 +14,8 @@ namespace Vision.API.Integration.Test
         public void EntityAnnotation_GetTextDetectionResponse_NotNull()
         {
             var moqDetectionAccess = new Mock<IDetectionAccess>();
-            moqDetectionAccess.Setup(x => x.GetTextDetectionResponse("")).Returns(new List<EntityAnnotation>());
-            Assert.IsNotNull(moqDetectionAccess.Object.GetTextDetectionResponse(""));
+            moqDetectionAccess.Setup(x => x.GetTextDetectionResponse(new Image())).Returns(new List<EntityAnnotation>());
+            Assert.IsNotNull(moqDetectionAccess.Object.GetTextDetectionResponse(new Image()));
         }
         
         [Test]
@@ -30,8 +30,8 @@ namespace Vision.API.Integration.Test
         public void EntityAnnotation_GetLabelsAnnotationsResponse_NotNull()
         {
             var moqDetectionAccess = new Mock<IDetectionAccess>();
-            moqDetectionAccess.Setup(x => x.GetLabelsAnnotationsResponse("")).Returns(new List<EntityAnnotation>());
-            Assert.IsNotNull(moqDetectionAccess.Object.GetLabelsAnnotationsResponse(""));
+            moqDetectionAccess.Setup(x => x.GetLabelsAnnotationsResponse(new Image())).Returns(new List<EntityAnnotation>());
+            Assert.IsNotNull(moqDetectionAccess.Object.GetLabelsAnnotationsResponse(new Image()));
         }
         
         [Test]
@@ -46,8 +46,8 @@ namespace Vision.API.Integration.Test
         public void EntityAnnotation_GetLocalizedObjectAnnotationsResponse_NotNull()
         {
             var moqDetectionAccess = new Mock<IDetectionAccess>();
-            moqDetectionAccess.Setup(x => x.GetLocalizedObjectAnnotationsResponse("")).Returns(new List<LocalizedObjectAnnotation>());
-            Assert.IsNotNull(moqDetectionAccess.Object.GetLocalizedObjectAnnotationsResponse(""));
+            moqDetectionAccess.Setup(x => x.GetLocalizedObjectAnnotationsResponse(new Image())).Returns(new List<LocalizedObjectAnnotation>());
+            Assert.IsNotNull(moqDetectionAccess.Object.GetLocalizedObjectAnnotationsResponse(new Image()));
         }
         
         [Test]

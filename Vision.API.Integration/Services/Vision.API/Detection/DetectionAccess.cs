@@ -13,30 +13,27 @@ namespace Vision.API.Integration.Pro.Services.Vision.API.Detection
             _imageAnnotatorClient = imageAnnotatorClient ?? throw new ArgumentNullException();
         }
         
-        public IReadOnlyList<EntityAnnotation> GetTextDetectionResponse(string filePath)
+        public IReadOnlyList<EntityAnnotation> GetTextDetectionResponse(Image image)
         {
-            if(string.IsNullOrEmpty(filePath))
+            if(image == null)
                 throw new ArgumentNullException();
-            var sourceImage = Image.FromFile(filePath);
-            var textDetectionResponse = _imageAnnotatorClient.DetectText(sourceImage);
+            var textDetectionResponse = _imageAnnotatorClient.DetectText(image);
             return textDetectionResponse;
         }
 
-        public IReadOnlyList<EntityAnnotation> GetLabelsAnnotationsResponse(string filePath)
+        public IReadOnlyList<EntityAnnotation> GetLabelsAnnotationsResponse(Image image)
         {
-            if(string.IsNullOrEmpty(filePath))
+            if(image == null)
                 throw new ArgumentNullException();
-            var sourceImage = Image.FromFile(filePath);
-            var labelDetectionResponse = _imageAnnotatorClient.DetectLabels(sourceImage);
+            var labelDetectionResponse = _imageAnnotatorClient.DetectLabels(image);
             return labelDetectionResponse;        
         }
 
-        public IReadOnlyList<LocalizedObjectAnnotation> GetLocalizedObjectAnnotationsResponse(string filePath)
+        public IReadOnlyList<LocalizedObjectAnnotation> GetLocalizedObjectAnnotationsResponse(Image image)
         {
-            if(string.IsNullOrEmpty(filePath))
+            if(image == null)
                 throw new ArgumentNullException();
-            var sourceImage = Image.FromFile(filePath);
-            var localizedObjectDetectionResponse = _imageAnnotatorClient.DetectLocalizedObjects(sourceImage);
+            var localizedObjectDetectionResponse = _imageAnnotatorClient.DetectLocalizedObjects(image);
             return localizedObjectDetectionResponse;
         }
     }

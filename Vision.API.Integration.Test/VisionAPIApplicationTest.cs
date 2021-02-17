@@ -38,7 +38,7 @@ namespace Vision.API.Integration.Test
         [Test]
         public void Method_ShutdownApplication_ThrowsException()
         {
-            Assert.Throws<Exception>(() => _applicationAccess.ShutdownApp());
+            Assert.DoesNotThrow(() => _applicationAccess.ShutdownApp());
         }
     }
 }

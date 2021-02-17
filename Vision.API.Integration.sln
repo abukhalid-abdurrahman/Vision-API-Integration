@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.API.Integration.Pro", "Vision.API.Integration\Vision.API.Integration.Pro.csproj", "{6AED4864-1CAC-42B9-A2E5-435BB75D71AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vision.API.Integration.Test", "Vision.API.Integration.Test\Vision.API.Integration.Test.csproj", "{F62AB61F-0CBD-4FD6-AD5E-E0E70BD58C36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AED4864-1CAC-42B9-A2E5-435BB75D71AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AED4864-1CAC-42B9-A2E5-435BB75D71AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AED4864-1CAC-42B9-A2E5-435BB75D71AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AED4864-1CAC-42B9-A2E5-435BB75D71AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62AB61F-0CBD-4FD6-AD5E-E0E70BD58C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62AB61F-0CBD-4FD6-AD5E-E0E70BD58C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62AB61F-0CBD-4FD6-AD5E-E0E70BD58C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62AB61F-0CBD-4FD6-AD5E-E0E70BD58C36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

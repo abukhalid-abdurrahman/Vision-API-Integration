@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Vision.API.Integration.Pro.Services.Vision.API.ImageRepository
+namespace Vision.API.Integration.Pro.Services.ImageRepository
 {
     public interface IImageRepository
     {

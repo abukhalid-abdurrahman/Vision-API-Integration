@@ -1,6 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
-using Vision.API.Integration.Pro.Services.Vision.API.ImageRepository;
+using Vision.API.Integration.Pro.Services.ImageRepository;
 
 namespace Vision.API.Integration.Test
 {

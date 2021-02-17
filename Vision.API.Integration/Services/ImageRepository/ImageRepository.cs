@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Net;
 
-namespace Vision.API.Integration.Pro.Services.Vision.API.ImageRepository
+namespace Vision.API.Integration.Pro.Services.ImageRepository
 {
     public class ImageRepository : IImageRepository
     {
